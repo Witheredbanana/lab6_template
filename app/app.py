@@ -1,9 +1,9 @@
 from flask import Flask, render_template, send_from_directory
 from flask_migrate import Migrate
 from sqlalchemy.exc import SQLAlchemyError
-from models import db, Category, Image
-from auth import bp as auth_bp, init_login_manager
-from courses import bp as courses_bp
+from app.models import db, Category, Image
+from app.auth import bp as auth_bp, init_login_manager
+from app.courses import bp as courses_bp
 
 app = Flask(__name__)
 application = app
