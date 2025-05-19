@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="d-flex h-100 bg-light">
+    <form class="container-fluid m-auto bg-white p-5 border round" method="POST" style="max-width: 30rem;">
+        <h2 class="text-center mb-4">Регистрация</h2>
+        
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="login" id="login" placeholder="login" required>
+            <label for="login">Логин</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Имя" required>
+            <label for="first_name">Имя</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Фамилия" required>
+            <label for="last_name">Фамилия</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="middle_name" id="middle_name" placeholder="Отчество">
+            <label for="middle_name">Отчество</label>
+        </div>
+    
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Пароль" required>
+            <label for="password">Пароль</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="password2" name="password2" placeholder="Подтверждение пароля" required>
+            <label for="password2">Подтверждение пароля</label>
+        </div>
+    
+        <button type="submit" class="btn btn-dark w-100">Зарегистрироваться</button>
+        
+        <div class="text-center mt-3">
+            <a href="{{ url_for('auth.login') }}">Уже есть аккаунт? Войти</a>
+        </div>
+    </form>
+</div>
+{% endblock %} 

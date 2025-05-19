@@ -1,0 +1,160 @@
+.logo {
+    max-width: 175px;
+}
+
+.profile {
+    max-width: 45px;
+}
+
+.background-preview {
+    border: 3px dashed grey;
+    flex-grow: 1;
+}
+
+.title-area {
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 1.5rem;
+    min-height: calc(75vh);
+}
+
+.courses-list .row:hover {
+    cursor: pointer;
+    border: 1px solid black !important;
+}
+
+.course-logo {
+    min-width: 170px;
+    width: 100%;
+    height: 170px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Стили для страницы курса */
+.main {
+    padding: 2rem 0;
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+/* Стили для отзывов */
+.review-card {
+    border-left: 4px solid #007bff;
+    margin-bottom: 1rem;
+}
+
+.review-card.positive {
+    border-left-color: #28a745;
+}
+
+.review-card.negative {
+    border-left-color: #dc3545;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.review-rating {
+    font-weight: bold;
+}
+
+.review-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Стили для пагинации */
+.pagination {
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.page-link {
+    color: #007bff;
+    padding: 0.5rem 1rem;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Стили для форм */
+.form-inline {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-inline .form-group {
+    margin-bottom: 0;
+}
+
+/* Стили для кнопок */
+.btn {
+    margin-right: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* Стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Стили для текста */
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+/* Стили для контейнера */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Стили для строк */
+.row {
+    margin-bottom: 2rem;
+}
+
+/* Стили для колонок */
+.col-md-8, .col-md-4, .col-12 {
+    padding: 0 15px;
+}
